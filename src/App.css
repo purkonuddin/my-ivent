@@ -1,0 +1,133 @@
+* {
+  font-family: 'Metropolis';
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.Tabs {
+  min-height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding-block-end: 5em;
+}
+
+/* tab */
+.Root {
+  height: 100vh;
+}
+
+.Tabs {
+  min-height: 100vh;
+  height: fit-content;
+  display: flex; 
+  background-color: #F5F5F5;
+  width: 100%;
+  padding-block-end: 5em;
+}
+
+#my-order div.Tabs {
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.TabList {
+  width: 20rem;
+  background: #ffffff;
+  margin-bottom: 0px;
+  padding-top: 100px;
+}
+
+#my-order div.Tabs ul.TabList{
+  width: 100%;
+  padding: 0px;
+  height: fit-content;
+  display: flex;
+}
+
+.TabPanel {
+  flex: 1 1;
+  display: none;
+  padding: 0 2rem;
+  margin-inline: 25px;
+  overflow: visible;
+  height: fit-content;
+}
+.TabPanel.is-active {
+  display: block;
+  background-color: #F5F5F5;
+}
+
+#my-order div.Tabs div.TabPanel.is-active{
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding-inline: 0px;
+  margin-inline: 0px;
+  border-top: 2px #e5e5e5;
+  margin-block: 2px;
+  padding-block: 25px;
+}
+
+.Button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #9B9B9B;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Button:focus,
+.Button:hover {
+  outline: 0;
+  background: transparent;
+  color: #000;
+  border: 1px #F5F5F5; 
+}
+.Tab.is-active .Button {
+  background: #ffffff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#my-order div.Tabs ul.TabList li.Tab.is-active .Button{
+  border-bottom: 5px solid #db3022;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.Button span {
+  background: transparent;
+  margin-inline-start: 25px;
+}
+li.Tab {
+  display: block;
+  padding-inline-start: 25px;
+}
+
+.sc1-input p select {
+  width: fit-content;
+  height: 48px;
+  border: 1px solid #9B9B9B;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-inline-end: 4px;
+}
+

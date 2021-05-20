@@ -1,0 +1,237 @@
+div.Tabs {
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+div.Tabs ul.TabList {
+    width: 100%;
+    padding: 0px;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+
+div.Tabs div.TabPanel.is-active {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    padding-inline: 0px;
+    margin-inline: 0px;
+    border-top: 2px #e5e5e5;
+    margin-block: 2px;
+    padding-block: 25px;
+    min-height: 100vh;
+}
+
+.bg-nastha { 
+    background: url('../../assets/nastha.PNG');
+    background-color: #f6f6f6;
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0;
+    justify-content: center;
+    display: flex;
+}
+
+.bg-card {
+    background: url('../../assets/bg-nastha.PNG');
+    background-color: #f6f6f6;
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0;
+    justify-content: center;
+    display: flex;
+}
+
+input.form-control {
+    width: auto
+}
+
+#left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#left>* {
+    background-color: #6c757d!important;
+}
+
+#left div.row>* {
+    background-color: transparent;
+}
+
+form div.form-row, div.form-row>* {
+    background-color: transparent;
+}
+
+.add-event-header {
+    display: flex;
+    align-self: start
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: initial;
+}
+
+
+/* ppaging */
+.wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+  }
+  .pagination > .active > a{
+    background-color:  #e9ecef;
+    border-color: #dee2e6;
+    color: #fff;
+  }
+  .pagination > li > a{
+    border: 1px solid #47ccde ;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #47ccde ;
+    border-color: transparent#47ccde;
+    outline: none ;
+  }
+  .pagination > li > a, .pagination > li > span{
+    color: #47ccde
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset;
+    border-width: 0;
+  }
+
+  /* date */
+.react-datepicker-wrapper>div>input {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* buton */
+.btn-upload-file {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media (max-width:360px){
+     div.Tabs {
+        width: fit-content;
+     }
+
+     div.Tabs>div#navbar-brand {
+        position: inherit;
+        background-color: transparent;
+     }
+
+     div.Tabs>div#navbar-brand>a {
+        font-size: 25px;
+     }
+
+     div.Tabs ul.TabList {
+        margin-top: 8em;
+        width: 83%;
+     }
+     div.Tabs ul.TabList> li.Tab.is-active {
+        padding: 0;
+        border-bottom: 1px solid orange;
+     }
+     div.TabPanel.is-active>div#dashboard>div>div.card {
+        position: relative;
+        left: -43px;
+     }
+     div#add-event  {
+        background-color: #6c757d;
+     }
+     textarea.form-control {
+        width: 325px;
+        left: -50px;
+        position: relative;
+        margin-top: 1em;
+    }
+    form div.form-row, div.form-row>* {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        display: -webkit-box;
+    }
+    input.form-control[name='location'] {
+        margin-top: 4em;
+        position: relative;
+        left: -60px;
+        width: 325px;
+    }
+
+    input.form-control[name='partisipant'] {
+        margin-top: 5em;
+    width: 325px;
+    position: relative;
+    left: -50px;
+    }
+    .react-datepicker-wrapper{
+        width: 325px;
+        position: relative;
+        left: -60px;
+        margin-top: 1em;
+    }
+    div.react-datepicker-wrapper>div>input.form-control {
+        padding: 1em;
+        width: 325px;
+        left: -60px;
+        position: absolute;
+    }
+    div.form-row>button.btn-upload-file {
+        width: 250px;
+    }
+    input.form-control[name='title']{
+        position: relative;
+        left: -50px;
+        width: 325px;
+    }
+    button#btn-add-event {
+        position: absolute;
+    }
+}
