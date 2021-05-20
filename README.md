@@ -31,10 +31,8 @@
 </code>
 
 # Demo
-link demo [loom.com](https://www.loom.com/share/f588f1f10a104f44b618433d57a7d2c8)
-
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/f588f1f10a104f44b618433d57a7d2c8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
+link demo [loom.com](https://www.loom.com/share/f588f1f10a104f44b618433d57a7d2c8) 
+[![Watch the video](https://www.loom.com/share/f588f1f10a104f44b618433d57a7d2c8)
 
 # Getting Started with Create React App
 
